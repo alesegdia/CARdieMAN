@@ -1,0 +1,103 @@
+
+packedimages.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bike_anim
+  rotate: false
+  xy: 50, 2
+  size: 26, 11
+  orig: 26, 11
+  offset: 0, 0
+  index: -1
+billboard
+  rotate: false
+  xy: 2, 4
+  size: 46, 15
+  orig: 46, 15
+  offset: 0, 0
+  index: -1
+car1
+  rotate: false
+  xy: 98, 31
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+car2
+  rotate: false
+  xy: 113, 31
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+flechadown
+  rotate: false
+  xy: 98, 23
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+flechaup
+  rotate: false
+  xy: 107, 23
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+ken_jump
+  rotate: false
+  xy: 116, 22
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+ken_stay
+  rotate: false
+  xy: 78, 5
+  size: 5, 8
+  orig: 5, 8
+  offset: 0, 0
+  index: -1
+letras
+  rotate: false
+  xy: 2, 55
+  size: 104, 5
+  orig: 104, 5
+  offset: 0, 0
+  index: -1
+lose
+  rotate: false
+  xy: 54, 22
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1
+numbers
+  rotate: false
+  xy: 54, 15
+  size: 30, 5
+  orig: 30, 5
+  offset: 0, 0
+  index: -1
+ovni_anim
+  rotate: false
+  xy: 98, 40
+  size: 26, 7
+  orig: 26, 7
+  offset: 0, 0
+  index: -1
+skate_anim
+  rotate: false
+  xy: 108, 49
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+splash
+  rotate: false
+  xy: 2, 21
+  size: 50, 32
+  orig: 50, 32
+  offset: 0, 0
+  index: -1
