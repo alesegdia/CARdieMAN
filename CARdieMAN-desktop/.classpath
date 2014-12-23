@@ -2,7 +2,14 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="assets"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/CARdieMAN"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CARdieMAN">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="CARdieMAN"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="*"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="libs/gdx-backend-lwjgl.jar" sourcepath="libs/gdx-backend-lwjgl-sources.jar"/>
 	<classpathentry kind="lib" path="libs/gdx-backend-lwjgl-natives.jar"/>

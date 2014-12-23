@@ -1,6 +1,6 @@
 package com.ufofrog.cardieman.game;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Segui Diaz
  */
 
 public class PackerConfig {

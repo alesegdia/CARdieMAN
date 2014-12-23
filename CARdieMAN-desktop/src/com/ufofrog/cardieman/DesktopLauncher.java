@@ -2,12 +2,11 @@ package com.ufofrog.cardieman;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-
 import com.badlogic.gdx.tools.imagepacker.TexturePacker2;
 import com.badlogic.gdx.tools.imagepacker.TexturePacker2.Settings;
 import com.badlogic.gdx.graphics.Texture;
-import com.ufofrog.cardieman.game.PackerConfig;
 import com.ufofrog.cardieman.game.GdxGame;
+import com.ufofrog.cardieman.game.PackerConfig;
 
 
 public class DesktopLauncher {
