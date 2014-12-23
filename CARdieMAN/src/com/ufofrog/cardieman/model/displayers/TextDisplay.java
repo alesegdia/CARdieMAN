@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class TextDisplay {
@@ -21,7 +21,7 @@ public class TextDisplay {
 		
 		for( int i = 0; i < 26; i++ )
 		{
-			sprites[i] = new Sprite( region, i*4, 0, 4, 5 );
+			sprites[i] = new Sprite( region, i*5, 0, 5, 5 );
 			sprites[i].setScale(scale,scale);
 		}
 		
@@ -42,7 +42,13 @@ public class TextDisplay {
 		}
 	}
 	
+	
 	public void RenderString( SpriteBatch batch, String cadena, float xoffset, float yoffset )
+	{
+		RenderString( batch, cadena, xoffset, yoffset, 1 );
+	}
+	
+	public void RenderString( SpriteBatch batch, String cadena, float xoffset, float yoffset, float scale )
 	{
 		for( int i = 0; i < cadena.length(); i++ )
 		{
@@ -50,7 +56,8 @@ public class TextDisplay {
 			if( ch == ' ' ) continue;
 			int spriteNum = ch - 'a';
 			sprites[spriteNum].setPosition( xoffset + i * spacing, yoffset );
-			sprites[spriteNum].draw( batch );			
+			// sprites[spriteNum].setScale(scale);
+			sprites[spriteNum].draw( batch );
 		}
 	}
 

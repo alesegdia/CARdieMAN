@@ -1,6 +1,6 @@
 package com.ufofrog.cardieman.game;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class GameDefaults {
@@ -24,7 +24,7 @@ public class GameDefaults {
 	public static final float ENEMY_X_START = 70.f;
 	
 		// coordenada X a partir de la cual se eliminan los enemigos de la escena
-	public static final float ENEMY_X_LIMIT = -50.f;
+	public static final float ENEMY_X_LIMIT = -100.f;
 
 
 

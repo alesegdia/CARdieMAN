@@ -20,7 +20,7 @@ public class DesktopLauncher {
 		
 		// PROCESS TEXTURE ATLAS
 		Settings settings = new Settings();
-		settings.maxWidth = 128;
+		settings.maxWidth = 256;
 		settings.maxHeight = 128;
 		settings.filterMin = Texture.TextureFilter.Nearest;
 		settings.filterMag = Texture.TextureFilter.Nearest;

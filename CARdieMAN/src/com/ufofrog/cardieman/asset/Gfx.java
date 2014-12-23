@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.ufofrog.cardieman.game.PackerConfig;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class Gfx {
@@ -39,6 +39,8 @@ public class Gfx {
 	private static TextureRegion ovni;
 	public static AtlasRegion flechaup;
 	public static AtlasRegion flechadown;
+	public static AtlasRegion esquela;
+	
 	
 	public static void Init(  )
 	{
@@ -62,6 +64,7 @@ public class Gfx {
 		ovni = atlas.findRegion("ovni_anim");
 		flechaup = atlas.findRegion("flechaup");
 		flechadown = atlas.findRegion("flechadown");
+		esquela = atlas.findRegion("esquela");
 		
 		
 		skate_anim = new SpritesheetAnimation( Gfx.skate, 2, 1, 2, 0.30f, Animation.LOOP );

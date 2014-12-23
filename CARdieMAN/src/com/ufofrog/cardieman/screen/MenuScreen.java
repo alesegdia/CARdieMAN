@@ -10,25 +10,21 @@ import com.ufofrog.cardieman.model.button.ToggleTextButton;
 import com.ufofrog.cardieman.model.button.Touchable;
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class MenuScreen extends GameScreen {
 	
 	Sprite splashSprite;
-	TextDisplay textdisplay;
-	TextDisplay minitextdisplay;
 
 	public MenuScreen(final GdxGame game, float viewportWidth, float viewportHeight) {
 		super(game, viewportWidth, viewportHeight);
 		
 		splashSprite = new Sprite( Gfx.splash );
 		splashSprite.setPosition(-25, -13);
-		textdisplay = new TextDisplay( Gfx.letras, 1f, 5 );
-		minitextdisplay = new TextDisplay( Gfx.letras, 0.5f, 3f );
 
 		AddButton(
-			new TextButton("play", textdisplay, -10, -22,
+			new TextButton("play", game.textdisplay, -10, -22,
 					new Touchable() {
 						public void OnTouch( )
 						{
@@ -38,7 +34,7 @@ public class MenuScreen extends GameScreen {
 
 		String[] strs = { "debug off", "debug on" };
 		AddButton(
-				new ToggleTextButton(strs, minitextdisplay, -14, 20,
+				new ToggleTextButton(strs, game.minitextdisplay, -14, 20,
 						new Touchable() {
 							public void OnTouch( )
 							{

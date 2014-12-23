@@ -1,38 +1,44 @@
 package com.ufofrog.cardieman.screen;
 
+import java.io.Reader;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.ufofrog.cardieman.asset.Gfx;
 import com.ufofrog.cardieman.game.GameScreen;
 import com.ufofrog.cardieman.game.GdxGame;
+import com.ufofrog.cardieman.game.HighscoreManager;
 import com.ufofrog.cardieman.model.button.SpriteButton;
 import com.ufofrog.cardieman.model.button.TextButton;
 import com.ufofrog.cardieman.model.button.Touchable;
 import com.ufofrog.cardieman.model.displayers.NumberDisplay;
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class SubmitScreen extends GameScreen {
 
 	char[] name = { 'a', 'a', 'a' };
-	TextDisplay namedisplay;
-	private float xoffset = 10;
-	private float yoffset = 10;
-	TextDisplay textdisplay;
+	private float xoffset = 15;
+	private float yoffset = 12;
 	private NumberDisplay numdisplay;
+	private Sprite killmeSprite;
 
 	public SubmitScreen(final GdxGame game, float viewportWidth, float viewportHeight) {
 
 		super( game, viewportWidth, viewportHeight );
+		
+		killmeSprite = new Sprite( Gfx.billboard );
+		killmeSprite.setPosition(0, 0);
 
-		namedisplay = new TextDisplay( Gfx.letras, 2.f, 10.f );
 		numdisplay = new NumberDisplay( Gfx.numbers, 4f);
-		textdisplay = new TextDisplay( Gfx.letras, 1.f, 5.f );
 
 		// SUBIR!
 		AddButton(
-				new SpriteButton( Gfx.flechaup, -11.5f + xoffset, yoffset,
+				new SpriteButton( Gfx.flechaup, -15f + xoffset, yoffset,
 						new Touchable() {
 							public void OnTouch( )
 							{
@@ -42,7 +48,7 @@ public class SubmitScreen extends GameScreen {
 						}));
 
 		AddButton(
-				new SpriteButton( Gfx.flechaup, -1.5f + xoffset, yoffset,
+				new SpriteButton( Gfx.flechaup, -3f + xoffset, yoffset,
 						new Touchable() {
 							public void OnTouch( )
 							{
@@ -51,7 +57,7 @@ public class SubmitScreen extends GameScreen {
 							}
 						}));
 		AddButton(
-				new SpriteButton( Gfx.flechaup, 8.5f + xoffset, yoffset,
+				new SpriteButton( Gfx.flechaup, 9f + xoffset, yoffset,
 						new Touchable() {
 							public void OnTouch( )
 							{
@@ -63,7 +69,7 @@ public class SubmitScreen extends GameScreen {
 		
 		// BAJAR!
 		AddButton(
-				new SpriteButton( Gfx.flechadown, -11.5f + xoffset, -21 + yoffset,
+				new SpriteButton( Gfx.flechadown, -15f + xoffset, -21 + yoffset,
 						new Touchable() {
 							public void OnTouch( )
 							{
@@ -72,7 +78,7 @@ public class SubmitScreen extends GameScreen {
 							}
 						}));
 		AddButton(
-				new SpriteButton( Gfx.flechadown, -1.5f + xoffset, -21 + yoffset,
+				new SpriteButton( Gfx.flechadown, -3f + xoffset, -21 + yoffset,
 						new Touchable() {
 							public void OnTouch( )
 							{
@@ -81,7 +87,7 @@ public class SubmitScreen extends GameScreen {
 							}
 						}));
 		AddButton(
-				new SpriteButton( Gfx.flechadown, 8.5f + xoffset, -21 + yoffset,
+				new SpriteButton( Gfx.flechadown, 9f + xoffset, -21 + yoffset,
 						new Touchable() {
 							public void OnTouch( )
 							{
@@ -91,15 +97,18 @@ public class SubmitScreen extends GameScreen {
 						}));
 		
 		AddButton(
-				new TextButton( "submit", textdisplay, -3f,-20f,
+				new TextButton( "submit", game.midtextdisplay, 0.5f,-20f,
 						new Touchable() {
 							public void OnTouch( )
 							{
+								HighscoreManager hm = game.highscoremanager;
+								hm.Register(new String(name), game.score);
+								System.out.println(hm.toString());
 								game.setScreen(game.splashScreen);
 							}
 						}));
 
-		// añadir botones
+		// aï¿½adir botones
 		// cargar cosas
 
 	}
@@ -108,19 +117,19 @@ public class SubmitScreen extends GameScreen {
 	{
 		// se llama con setScreen
 	}
-	
+
 	@Override
 	public void Update( float delta )
 	{
 		
 	}
-	
+
 	@Override
 	public void Render( SpriteBatch batch ) {
-		namedisplay.RenderCharArray(batch, name, -10 + xoffset, -10 + yoffset);
-		textdisplay.RenderString(batch, "score", -36, 10);
+		game.esquelaSprite.draw(batch);
+		game.namedisplay.RenderCharArray(batch, name, -14 + xoffset, -10 + yoffset);
+		game.midtextdisplay.RenderString(batch, "score", -33, 10);
 		numdisplay.RenderNumber(batch, game.score, -15, 0);
-
 	}
 
 }

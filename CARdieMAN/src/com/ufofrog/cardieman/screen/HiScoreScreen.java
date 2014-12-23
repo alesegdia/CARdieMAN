@@ -2,15 +2,16 @@ package com.ufofrog.cardieman.screen;
 
 import com.ufofrog.cardieman.game.GameScreen;
 import com.ufofrog.cardieman.game.GdxGame;
+import com.ufofrog.cardieman.model.displayers.TextDisplay;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class HiScoreScreen extends GameScreen {
 
+
 	public HiScoreScreen(GdxGame game, float viewportWidth, float viewportHeight) {
 		super(game, viewportWidth, viewportHeight);
-		// TODO Auto-generated constructor stub
 	}
 
 }

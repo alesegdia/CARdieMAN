@@ -2,7 +2,7 @@ package com.ufofrog.cardieman.model.button;
 
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class ToggleTextButton extends TextButton {

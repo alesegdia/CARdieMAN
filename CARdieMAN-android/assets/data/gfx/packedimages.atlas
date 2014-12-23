@@ -5,98 +5,105 @@ filter: Nearest,Nearest
 repeat: none
 bike_anim
   rotate: false
-  xy: 50, 2
+  xy: 178, 50
   size: 26, 11
   orig: 26, 11
   offset: 0, 0
   index: -1
 billboard
   rotate: false
-  xy: 2, 4
+  xy: 82, 5
   size: 46, 15
   orig: 46, 15
   offset: 0, 0
   index: -1
 car1
   rotate: false
-  xy: 98, 31
+  xy: 178, 32
   size: 13, 7
   orig: 13, 7
   offset: 0, 0
   index: -1
 car2
   rotate: false
-  xy: 113, 31
+  xy: 206, 41
   size: 13, 7
   orig: 13, 7
   offset: 0, 0
   index: -1
+esquela
+  rotate: false
+  xy: 2, 2
+  size: 78, 52
+  orig: 78, 52
+  offset: 0, 0
+  index: -1
 flechadown
   rotate: false
-  xy: 98, 23
+  xy: 222, 55
   size: 7, 6
   orig: 7, 6
   offset: 0, 0
   index: -1
 flechaup
   rotate: false
-  xy: 107, 23
+  xy: 193, 33
   size: 7, 6
   orig: 7, 6
   offset: 0, 0
   index: -1
 ken_jump
   rotate: false
-  xy: 116, 22
+  xy: 231, 54
   size: 5, 7
   orig: 5, 7
   offset: 0, 0
   index: -1
 ken_stay
   rotate: false
-  xy: 78, 5
+  xy: 238, 53
   size: 5, 8
   orig: 5, 8
   offset: 0, 0
   index: -1
 letras
   rotate: false
-  xy: 2, 55
-  size: 104, 5
-  orig: 104, 5
+  xy: 2, 56
+  size: 130, 5
+  orig: 130, 5
   offset: 0, 0
   index: -1
 lose
   rotate: false
-  xy: 54, 22
+  xy: 134, 30
   size: 42, 31
   orig: 42, 31
   offset: 0, 0
   index: -1
 numbers
   rotate: false
-  xy: 54, 15
+  xy: 134, 23
   size: 30, 5
   orig: 30, 5
   offset: 0, 0
   index: -1
 ovni_anim
   rotate: false
-  xy: 98, 40
+  xy: 178, 41
   size: 26, 7
   orig: 26, 7
   offset: 0, 0
   index: -1
 skate_anim
   rotate: false
-  xy: 108, 49
+  xy: 206, 50
   size: 14, 11
   orig: 14, 11
   offset: 0, 0
   index: -1
 splash
   rotate: false
-  xy: 2, 21
+  xy: 82, 22
   size: 50, 32
   orig: 50, 32
   offset: 0, 0
