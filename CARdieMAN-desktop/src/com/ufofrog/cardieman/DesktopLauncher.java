@@ -42,6 +42,6 @@ public class DesktopLauncher {
 					// nombre del atlas
 
 		
-		new LwjglApplication(new GdxGame(), cfg);
+		new LwjglApplication(new GdxGame( new ActionResolverDesktop()), cfg);
 	}
 }
