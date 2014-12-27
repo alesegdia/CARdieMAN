@@ -7,11 +7,13 @@ CARdieMAN
 LICENSE
 ---
 
-I plan on publishing **CARdieMAN** soon at the store with a few ads and see if I can earn
-a couple of beers.
+~~I plan on publishing **CARdieMAN** soon at the store with a few ads and see if I can earn
+a couple of beers.~~
+
+## CARdieMAN is published on the store!
 
 The purpose of placing all the code, graphics, music and sfx
-here is just to let anyone build its own free-from-ads version, or just check how
+here is just to let anyone build it, or just check how
 it is done, but **NOT** ~~steal~~ release at the store or sell it. You can share a build at
 common sharing websites or p2p if you want **ONLY IF** you give credits and link to this
 github repository and you **DO NOT** earn any money and/or credits with it.
