@@ -7,7 +7,7 @@ CARdieMAN
 ~~I plan on publishing **CARdieMAN** soon at the store with a few ads and see if I can earn
 a couple of beers.~~
 
-## CARdieMAN is published on the store!
+**CARdieMAN is published on the store!**
 
 LICENSE
 ---
