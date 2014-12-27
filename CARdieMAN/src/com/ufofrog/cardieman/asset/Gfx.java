@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
-import com.ufofrog.cardieman.game.PackerConfig;
+import com.ufofrog.core.PackerConfig;
 /**
  * @author Alejandro Segu� D�az
  */
@@ -40,6 +40,7 @@ public class Gfx {
 	public static AtlasRegion flechaup;
 	public static AtlasRegion flechadown;
 	public static AtlasRegion esquela;
+	public static AtlasRegion logufofrog;
 	
 	
 	public static void Init(  )
@@ -65,6 +66,7 @@ public class Gfx {
 		flechaup = atlas.findRegion("flechaup");
 		flechadown = atlas.findRegion("flechadown");
 		esquela = atlas.findRegion("esquela");
+		logufofrog = atlas.findRegion("logufofrog");
 		
 		
 		skate_anim = new SpritesheetAnimation( Gfx.skate, 2, 1, 2, 0.30f, Animation.LOOP );

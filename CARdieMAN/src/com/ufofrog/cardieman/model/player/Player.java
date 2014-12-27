@@ -9,7 +9,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.ufofrog.cardieman.asset.Gfx;
 import com.ufofrog.cardieman.asset.Sfx;
 import com.ufofrog.cardieman.game.GameDefaults;
-import com.ufofrog.cardieman.game.Input;
+import com.ufofrog.core.Input;
 /**
  * @author Alejandro Segu� D�az
  */

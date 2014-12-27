@@ -1,8 +1,8 @@
 package com.ufofrog.cardieman.screen;
 
-import com.ufofrog.cardieman.game.GameScreen;
 import com.ufofrog.cardieman.game.GdxGame;
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
+import com.ufofrog.core.GameScreen;
 /**
  * @author Alejandro Segu� D�az
  */

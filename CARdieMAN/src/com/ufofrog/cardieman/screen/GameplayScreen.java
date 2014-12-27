@@ -15,7 +15,6 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.ufofrog.cardieman.asset.Gfx;
 import com.ufofrog.cardieman.asset.Sfx;
 import com.ufofrog.cardieman.game.GameDefaults;
-import com.ufofrog.cardieman.game.GameScreen;
 import com.ufofrog.cardieman.game.GdxGame;
 import com.ufofrog.cardieman.model.button.TextButton;
 import com.ufofrog.cardieman.model.displayers.NumberDisplay;
@@ -24,6 +23,7 @@ import com.ufofrog.cardieman.model.enemy.Enemy;
 import com.ufofrog.cardieman.model.enemy.Ovni;
 import com.ufofrog.cardieman.model.enemy.Skate;
 import com.ufofrog.cardieman.model.player.Player;
+import com.ufofrog.core.GameScreen;
 /**
  * @author Alejandro Segu� D�az
  */

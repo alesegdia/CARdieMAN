@@ -1,8 +1,8 @@
 package com.ufofrog.cardieman.model.button;
 
-import com.ufofrog.cardieman.game.GameScreen;
+import com.ufofrog.core.GameScreen;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public interface Touchable {

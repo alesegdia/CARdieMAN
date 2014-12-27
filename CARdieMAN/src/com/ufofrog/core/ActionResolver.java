@@ -1,4 +1,4 @@
-package com.ufofrog.cardieman;
+package com.ufofrog.core;
 
 public interface ActionResolver {
 	public void showOrLoadInterstital();

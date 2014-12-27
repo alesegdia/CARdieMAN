@@ -1,10 +1,10 @@
 package com.ufofrog.cardieman.screen;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.ufofrog.cardieman.game.GameScreen;
 import com.ufofrog.cardieman.game.GdxGame;
+import com.ufofrog.core.GameScreen;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class DummyScreen extends GameScreen {
@@ -13,7 +13,7 @@ public class DummyScreen extends GameScreen {
 
 		super( game, viewportWidth, viewportHeight );
 
-		// añadir botones
+		// aï¿½adir botones
 		// cargar cosas
 
 	}

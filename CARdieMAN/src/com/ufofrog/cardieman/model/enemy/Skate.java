@@ -4,7 +4,7 @@ import com.ufofrog.cardieman.asset.Gfx;
 import com.ufofrog.cardieman.game.GameDefaults;
 
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class Skate extends Enemy {

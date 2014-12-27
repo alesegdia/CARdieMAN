@@ -4,7 +4,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.ufofrog.cardieman.asset.Gfx;
 import com.ufofrog.cardieman.game.GameDefaults;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 

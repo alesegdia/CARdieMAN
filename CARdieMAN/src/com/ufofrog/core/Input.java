@@ -1,4 +1,4 @@
-package com.ufofrog.cardieman.game;
+package com.ufofrog.core;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Camera;
@@ -7,7 +7,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public class Input {

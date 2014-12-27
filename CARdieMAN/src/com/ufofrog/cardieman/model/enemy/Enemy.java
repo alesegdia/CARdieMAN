@@ -11,7 +11,7 @@ import com.ufofrog.cardieman.asset.SpritesheetAnimation;
 import com.ufofrog.cardieman.game.GameDefaults;
 import com.ufofrog.cardieman.model.player.Player;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 public abstract class Enemy {

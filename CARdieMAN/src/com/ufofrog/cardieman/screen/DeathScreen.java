@@ -5,12 +5,12 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.ufofrog.cardieman.asset.Gfx;
-import com.ufofrog.cardieman.game.GameScreen;
 import com.ufofrog.cardieman.game.GdxGame;
 import com.ufofrog.cardieman.model.button.TextButton;
 import com.ufofrog.cardieman.model.button.Touchable;
 import com.ufofrog.cardieman.model.displayers.NumberDisplay;
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
+import com.ufofrog.core.GameScreen;
 
 /**
  * @author Alejandro Segu� D�az

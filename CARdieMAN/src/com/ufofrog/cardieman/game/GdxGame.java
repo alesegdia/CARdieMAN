@@ -1,28 +1,23 @@
 package com.ufofrog.cardieman.game;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.input.GestureDetector;
-import com.badlogic.gdx.input.GestureDetector.GestureListener;
 import com.badlogic.gdx.math.Vector2;
-import com.ufofrog.cardieman.ActionResolver;
 import com.ufofrog.cardieman.asset.Gfx;
-import com.ufofrog.cardieman.asset.Loader;
-import com.ufofrog.cardieman.asset.Sfx;
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
 import com.ufofrog.cardieman.screen.DeathScreen;
 import com.ufofrog.cardieman.screen.GameplayScreen;
 import com.ufofrog.cardieman.screen.MenuScreen;
 import com.ufofrog.cardieman.screen.SubmitScreen;
+import com.ufofrog.core.ActionResolver;
+import com.ufofrog.core.GameApp;
+import com.ufofrog.core.GameScreen;
+import com.ufofrog.core.Input;
 /**
  * @author Alejandro Segu� D�az
  */
 
-public class GdxGame extends Game implements ApplicationListener, GestureListener {
-	
-	private ActionResolver actionResolver;
+public class GdxGame extends GameApp  {
 	
 	public GameplayScreen gameplayScreen;
 	public MenuScreen splashScreen;
@@ -42,13 +37,11 @@ public class GdxGame extends Game implements ApplicationListener, GestureListene
 
 	public GdxGame(ActionResolver actionResolver)
 	{
-		this.actionResolver = actionResolver;
+		super(actionResolver);
 	}
 
 	@Override
-	public void create() {
-
-		Loader.Init();
+	public void Create() {
 
 		//splashScreen = new GameScreen( this );
 		float w = Gdx.graphics.getWidth();
@@ -66,13 +59,11 @@ public class GdxGame extends Game implements ApplicationListener, GestureListene
 		submitScreen = new SubmitScreen( this, (w/h) * scale, scale );
 		
 		setScreen( splashScreen );
+		//this.actionResolver.showOrLoadInterstital();
 		highscoremanager = new HighscoreManager();
 		
 		esquelaSprite = new Sprite( Gfx.esquela );
 		esquelaSprite.setPosition(-39, -26);
-		
-		GestureDetector gd = new GestureDetector(this);
-		Gdx.input.setInputProcessor(gd);
 	}
 	
 	public void setScreen( GameScreen gs )

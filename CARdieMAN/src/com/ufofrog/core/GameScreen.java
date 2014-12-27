@@ -1,6 +1,5 @@
-package com.ufofrog.cardieman.game;
+package com.ufofrog.core;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Camera;
@@ -9,11 +8,12 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import com.ufofrog.cardieman.game.GdxGame;
 import com.ufofrog.cardieman.model.button.Button;
 import com.ufofrog.cardieman.model.button.ButtonManager;
-import com.ufofrog.cardieman.model.button.TextButton;
+import com.ufofrog.core.Input;
 /**
- * @author Alejandro Seguí Díaz
+ * @author Alejandro Seguï¿½ Dï¿½az
  */
 
 // generics para acceder a las demÃ¡s screens

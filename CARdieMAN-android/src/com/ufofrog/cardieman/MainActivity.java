@@ -1,9 +1,7 @@
 package com.ufofrog.cardieman;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -23,15 +21,13 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.ufofrog.cardieman.game.GdxGame;
+import com.ufofrog.core.ActionResolver;
 
 
 public class MainActivity extends AndroidApplication implements ActionResolver {
 	
 	private static final String AD_UNIT_ID_BANNER = "ca-app-pub-8815167150539395/8726260461";
 	private static final String AD_UNIT_ID_INTERSTITIAL = "ca-app-pub-8815167150539395/7303559663";
-	private static final String GOOGLE_PLAY_URL = "https://play.google.com/store/apps/developer?id=TheInvader360";
-	private static final String GITHUB_URL = "https://github.com/alesegdia";
-	private static final String BLOG_URL = "http://theinvader360.blogspot.co.uk/";
 	protected AdView adView;
 	protected View gameView;
 	private InterstitialAd interstitialAd;
@@ -154,7 +150,7 @@ public class MainActivity extends AndroidApplication implements ActionResolver {
 
 	@Override
 	public void onBackPressed() {
-		/*
+
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		LinearLayout ll = new LinearLayout(this);
@@ -167,38 +163,7 @@ public class MainActivity extends AndroidApplication implements ActionResolver {
 			}
 		});
 		ll.addView(b1);
-		Button b2 = new Button(this);
-		b2.setText("Games");
-		b2.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri
-						.parse(GOOGLE_PLAY_URL)));
-				dialog.dismiss();
-			}
-		});
-		ll.addView(b2);
-		Button b3 = new Button(this);
-		b3.setText("GitHub");
-		b3.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri
-						.parse(GITHUB_URL)));
-				dialog.dismiss();
-			}
-		});
-		ll.addView(b3);
-		Button b4 = new Button(this);
-		b4.setText("Blog");
-		b4.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri
-						.parse(BLOG_URL)));
-				dialog.dismiss();
-			}
-		});
-		ll.addView(b4);
 		dialog.setContentView(ll);
 		dialog.show();
-		*/
 	}
 }

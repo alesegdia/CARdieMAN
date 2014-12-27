@@ -1,4 +1,4 @@
-package com.ufofrog.cardieman.game;
+package com.ufofrog.core;
 /**
  * @author Alejandro Segui Diaz
  */
