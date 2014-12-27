@@ -48,8 +48,10 @@ public class GameDefaults {
 	public static final float SKATE_PROB_FACTOR = 0.6f;
 	public static final float OVNI_PROB_FACTOR = 0.5f;
 
-	public static final float UP_LEVEL = 10;
+	public static final float UP_LEVEL = 5;
 
 	public static final double SPEED_LEVEL_MULTIPLIER = 10;
+
+	public static final float MAX_LEVEL = 7f;
 
 }

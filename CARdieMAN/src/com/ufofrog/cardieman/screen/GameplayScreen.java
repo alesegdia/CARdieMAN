@@ -195,7 +195,9 @@ public class GameplayScreen extends GameScreen {
 				enemyRef.Reset(
 					GameDefaults.ENEMY_X_START,
 					GameDefaults.FLOOR_POSITION,
-					(float) (GameDefaults.ENEMY_INITIAL_SPEED + ( Math.floor(game.score/GameDefaults.UP_LEVEL) * GameDefaults.SPEED_LEVEL_MULTIPLIER )));
+					(float) (GameDefaults.ENEMY_INITIAL_SPEED + (
+							Math.min(Math.floor(game.score/GameDefaults.UP_LEVEL), GameDefaults.MAX_LEVEL)
+							* GameDefaults.SPEED_LEVEL_MULTIPLIER )));
 				activeEnemies.add( enemyRef );
 				
 				if( debugMsgs )
