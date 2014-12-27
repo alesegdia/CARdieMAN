@@ -4,13 +4,13 @@ CARdieMAN
 "Runner" game for android using LibGDX.
 
 
-LICENSE
----
-
 ~~I plan on publishing **CARdieMAN** soon at the store with a few ads and see if I can earn
 a couple of beers.~~
 
 ## CARdieMAN is published on the store!
+
+LICENSE
+---
 
 The purpose of placing all the code, graphics, music and sfx
 here is just to let anyone build it, or just check how
