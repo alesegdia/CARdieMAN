@@ -17,7 +17,7 @@ import com.ufofrog.core.GameScreen;
  */
 
 
-public class DeathScreen extends GameScreen {
+public class DeathScreen extends CardiemanScreen {
 
 	private Sprite losersprite;
 	private TextDisplay namedisplay;
@@ -61,12 +61,14 @@ public class DeathScreen extends GameScreen {
 	@Override
 	public void Update( float delta )
 	{
+		super.Update(delta);
 	}
 	
 	@Override
 	public void Render( SpriteBatch batch ) {
-
+		
 		game.esquelaSprite.draw(batch);
+		super.Render(batch);
 
 		//losersprite.draw(batch);
 		passedSinceDead += Gdx.graphics.getDeltaTime();
@@ -87,8 +89,8 @@ public class DeathScreen extends GameScreen {
 			game.textdisplay.RenderString(batch, name, xoff + 0, yoff - (i * 10));
 			numdisplay.RenderNumber(batch, score, xoff + 53, yoff - (i * 10));
 		}
-
 		
+
 	}
 
 }

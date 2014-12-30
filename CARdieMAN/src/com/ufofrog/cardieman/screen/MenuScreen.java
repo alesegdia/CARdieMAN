@@ -13,7 +13,7 @@ import com.ufofrog.core.GameScreen;
  * @author Alejandro Segu� D�az
  */
 
-public class MenuScreen extends GameScreen {
+public class MenuScreen extends CardiemanScreen {
 	
 	Sprite splashSprite;
 	Sprite logufofrog;
@@ -51,6 +51,7 @@ public class MenuScreen extends GameScreen {
 	@Override
 	public void Render( SpriteBatch batch )
 	{
+		super.Render(batch);
 		splashSprite.draw( batch );
 		logufofrog.draw(batch);
 	}

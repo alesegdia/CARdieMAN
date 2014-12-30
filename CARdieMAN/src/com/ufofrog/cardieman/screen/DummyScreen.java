@@ -7,7 +7,7 @@ import com.ufofrog.core.GameScreen;
  * @author Alejandro Segu� D�az
  */
 
-public class DummyScreen extends GameScreen {
+public class DummyScreen extends CardiemanScreen {
 
 	public DummyScreen(final GdxGame game, float viewportWidth, float viewportHeight) {
 
@@ -26,12 +26,12 @@ public class DummyScreen extends GameScreen {
 	@Override
 	public void Update( float delta )
 	{
-		
+		super.Update(delta);
 	}
 	
 	@Override
 	public void Render( SpriteBatch batch ) {
-		
+		super.Render(batch);
 	}
 
 }

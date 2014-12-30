@@ -28,7 +28,7 @@ import com.ufofrog.core.GameScreen;
  * @author Alejandro Segu� D�az
  */
 
-public class GameplayScreen extends GameScreen {
+public class GameplayScreen extends CardiemanScreen {
 
 
 	// MODEL
@@ -120,6 +120,8 @@ public class GameplayScreen extends GameScreen {
 	@Override
 	public void Update( float delta )
 	{
+		super.Update(delta);
+		
 		/** UPDATE / CHECKOUT ENEMIES **/
 		player.Update();
 		Iterator<Enemy> it = activeEnemies.iterator();
@@ -214,6 +216,7 @@ public class GameplayScreen extends GameScreen {
 	@Override
 	public void Render( SpriteBatch batch )
 	{
+		super.Render(batch);
 		
 		player.Render( batch );
 		for( Enemy e : activeEnemies )
@@ -229,6 +232,7 @@ public class GameplayScreen extends GameScreen {
 	@Override
 	public void DebugRender( ShapeRenderer shaperenderer )
 	{
+		super.DebugRender(shaperenderer);
 		player.DebugRender(shaperenderer);
 		for( Enemy e : activeEnemies )
 		{

@@ -7,7 +7,7 @@ import com.ufofrog.core.GameScreen;
  * @author Alejandro Segu� D�az
  */
 
-public class HiScoreScreen extends GameScreen {
+public class HiScoreScreen extends CardiemanScreen {
 
 
 	public HiScoreScreen(GdxGame game, float viewportWidth, float viewportHeight) {

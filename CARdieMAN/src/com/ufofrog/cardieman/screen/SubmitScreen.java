@@ -1,9 +1,5 @@
 package com.ufofrog.cardieman.screen;
 
-import java.io.Reader;
-
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.ufofrog.cardieman.asset.Gfx;
@@ -13,13 +9,11 @@ import com.ufofrog.cardieman.model.button.SpriteButton;
 import com.ufofrog.cardieman.model.button.TextButton;
 import com.ufofrog.cardieman.model.button.Touchable;
 import com.ufofrog.cardieman.model.displayers.NumberDisplay;
-import com.ufofrog.cardieman.model.displayers.TextDisplay;
-import com.ufofrog.core.GameScreen;
 /**
  * @author Alejandro Segu� D�az
  */
 
-public class SubmitScreen extends GameScreen {
+public class SubmitScreen extends CardiemanScreen {
 
 	char[] name = { 'a', 'a', 'a' };
 	private float xoffset = 15;
@@ -121,12 +115,14 @@ public class SubmitScreen extends GameScreen {
 	@Override
 	public void Update( float delta )
 	{
-		
+		super.Update(delta);
 	}
 
 	@Override
 	public void Render( SpriteBatch batch ) {
 		game.esquelaSprite.draw(batch);
+		super.Render(batch);
+
 		game.namedisplay.RenderCharArray(batch, name, -14 + xoffset, -10 + yoffset);
 		game.midtextdisplay.RenderString(batch, "score", -33, 10);
 		numdisplay.RenderNumber(batch, game.score, -15, 0);
