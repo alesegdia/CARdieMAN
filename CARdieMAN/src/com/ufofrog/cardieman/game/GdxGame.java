@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Vector2;
 import com.ufofrog.cardieman.asset.Gfx;
 import com.ufofrog.cardieman.model.displayers.TextDisplay;
+import com.ufofrog.cardieman.screen.CardiemanScreen;
 import com.ufofrog.cardieman.screen.DeathScreen;
 import com.ufofrog.cardieman.screen.GameplayScreen;
 import com.ufofrog.cardieman.screen.MenuScreen;
@@ -66,11 +67,18 @@ public class GdxGame extends GameApp  {
 		esquelaSprite.setPosition(-39, -26);
 	}
 	
-	public void setScreen( GameScreen gs )
+	public void setScreen( CardiemanScreen gs )
 	{
 		setScreen( ((Screen)gs) );
 		Input.SetCamera( gs.GetCam() );
 		gs.Reset();
+	}
+
+	@Override
+	public void ScreenChange( GameScreen gs )
+	{
+		CardiemanScreen cdmsc = ((CardiemanScreen)gs);
+		Input.SetCamera( cdmsc.GetCam() );
 	}
 
 	@Override
