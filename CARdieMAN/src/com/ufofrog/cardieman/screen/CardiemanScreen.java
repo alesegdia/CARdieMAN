@@ -7,7 +7,7 @@ import com.ufofrog.cardieman.model.button.Button;
 import com.ufofrog.cardieman.model.button.ButtonManager;
 import com.ufofrog.core.GameScreen;
 
-public abstract class CardiemanScreen extends GameScreen {
+public abstract class CardiemanScreen extends GameScreen<GdxGame> {
 
 	private ButtonManager _buttonmanager;
 
