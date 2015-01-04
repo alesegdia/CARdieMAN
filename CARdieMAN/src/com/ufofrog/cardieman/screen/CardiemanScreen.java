@@ -8,10 +8,10 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.ufofrog.cardieman.game.GdxGame;
+import com.ufofrog.cardieman.game.Input;
 import com.ufofrog.cardieman.model.button.Button;
 import com.ufofrog.cardieman.model.button.ButtonManager;
 import com.ufofrog.core.GameScreen;
-import com.ufofrog.core.Input;
 
 public abstract class CardiemanScreen extends GameScreen<GdxGame> {
 

@@ -13,7 +13,6 @@ import com.ufofrog.cardieman.screen.SubmitScreen;
 import com.ufofrog.core.ActionResolver;
 import com.ufofrog.core.GameApp;
 import com.ufofrog.core.GameScreen;
-import com.ufofrog.core.Input;
 /**
  * @author Alejandro Segu� D�az
  */

@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
-import com.ufofrog.core.PackerConfig;
+import com.ufofrog.cardieman.game.PackerConfig;
 /**
  * @author Alejandro Segu� D�az
  */

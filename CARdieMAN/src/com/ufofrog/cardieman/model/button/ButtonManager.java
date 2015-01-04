@@ -8,8 +8,8 @@ import java.util.List;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.ufofrog.cardieman.game.Input;
 import com.ufofrog.core.GameScreen;
-import com.ufofrog.core.Input;
 
 public class ButtonManager {
 

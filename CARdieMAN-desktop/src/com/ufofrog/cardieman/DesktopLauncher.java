@@ -6,7 +6,7 @@ import com.badlogic.gdx.tools.imagepacker.TexturePacker2;
 import com.badlogic.gdx.tools.imagepacker.TexturePacker2.Settings;
 import com.badlogic.gdx.graphics.Texture;
 import com.ufofrog.cardieman.game.GdxGame;
-import com.ufofrog.core.PackerConfig;
+import com.ufofrog.cardieman.game.PackerConfig;
 
 
 public class DesktopLauncher {
