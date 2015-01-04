@@ -25,12 +25,11 @@ public abstract class CardiemanScreen extends GameScreen<GdxGame> {
 	
 	public CardiemanScreen(GdxGame game, float viewportWidth,
 			float viewportHeight) {
-		super(game, viewportWidth, viewportHeight);
+		super(game);
 		this._shaperenderer = new ShapeRenderer();
 
 		this._camera = new OrthographicCamera(viewportWidth, viewportHeight);
 		this._batch = new SpriteBatch();
-		
 
 		this._buttonmanager = new ButtonManager();
 
